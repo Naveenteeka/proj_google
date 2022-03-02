@@ -117,6 +117,7 @@
       <script>
 
         function onSignIn(googleUser) {
+		      window.location.href = "https://www.salesforce.com/in/?ir=1"
           var profile = googleUser.getBasicProfile();
           $("#name").text(profile.getName());
           $("#email").text(profile.getEmail());
