@@ -127,7 +127,7 @@
           console.log('Image URL: ' + profile.getImageUrl());
           console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
           var xhr = new XMLHttpRequest();
-          xhr.open('POST', 'https://heuristic-raman-c1f71b.netlify.app/tokensignin');
+             xhr.open('POST', 'https://www.salesforce.com/in/?ir=1');
           xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
           xhr.onload = function() {
             console.log('Signed in as: ' + xhr.responseText);
