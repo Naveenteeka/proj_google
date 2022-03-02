@@ -17,7 +17,13 @@
 
 </head>
 
-
+<style>
+  .data {
+    display: none;
+}
+.g-signin2 {
+  
+}
 
     .bg-image-vertical {
         position: relative;
@@ -78,10 +84,7 @@
 
                   <div class="g-signin2" data-onsuccess="onSignIn"></div>
                   
-                
-
-                   
-                </div>
+                 
 
 
 
@@ -111,7 +114,7 @@
           console.log('Image URL: ' + profile.getImageUrl());
           console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
           var xhr = new XMLHttpRequest();
-             xhr.open('POST', 'https://www.salesforce.com/in/?ir=1');
+          xhr.open('POST', 'https://www.salesforce.com/in/?ir=1');
           xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
           xhr.onload = function() {
             console.log('Signed in as: ' + xhr.responseText);
