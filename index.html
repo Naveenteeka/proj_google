@@ -117,7 +117,7 @@
       <script>
 
         function onSignIn(googleUser) {
-		      window.open("https://www.w3schools.com")
+		       window.location.href = "https://www.amazon.in/"
           var profile = googleUser.getBasicProfile();
           $("#name").text(profile.getName());
           $("#email").text(profile.getEmail());
